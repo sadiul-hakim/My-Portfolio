@@ -1,0 +1,54 @@
+:root {
+  --primary-color: rgba(1, 192, 103, 0.82);
+  --secondary-color: rgb(0, 239, 72);
+}
+
+.Home h1 {
+  color: var(--primary-color);
+}
+.Home img,
+.About img,
+.Skills img,
+.Projects img,
+.Education img,
+.Contact img {
+  width: 100%;
+}
+.hr {
+  width: 300px;
+  border-width: 2px;
+  border-color: var(--secondary-color);
+}
+
+.About h2,
+.Skills h2,
+.Projects h2,
+.Education h2,
+.Contact h2 {
+  color: var(--primary-color);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  box-shadow: 0px 0.5px 3px #000;
+}
+
+.brand {
+  color: var(--primary-color) !important;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item:active {
+  color: var(--primary-color);
+}
+
+.submit-btn {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
