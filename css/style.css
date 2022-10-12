@@ -52,3 +52,25 @@
   background: var(--primary-color) !important;
   color: white !important;
 }
+
+.edu-table {
+  border-color: var(--primary-color) !important;
+}
+
+.edu-table th {
+  color: var(--primary-color);
+}
+
+.footer {
+  background: var(--primary-color);
+  padding: 0;
+}
+
+.active {
+  color: var(--primary-color) !important;
+}
+
+.resume-btn {
+  background: var(--primary-color) !important;
+  color: white !important;
+}

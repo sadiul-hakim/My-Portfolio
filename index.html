@@ -7,6 +7,11 @@
     <title>Sadiul Hakim</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
   </head>
@@ -15,7 +20,9 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand brand" href="#">Portfolio</a>
+          <a class="navbar-brand brand" href="#"
+            ><i class="fa fa-drivers-license-o"></i> Portfolio</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -55,6 +62,15 @@
                   >Contact</a
                 >
               </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <a
+                class="btn resume-btn"
+                href="resources/my-resume.pdf"
+                download="resume.pdf"
+              >
+                <i class="fa fa-cloud-download"></i> Resume</a
+              >
             </ul>
           </div>
         </div>
@@ -175,7 +191,7 @@
             <hr class="hr" />
             <p class="lead">I have taken some degrees</p>
 
-            <table class="table table-bordered border-primary">
+            <table class="table edu-table table-bordered">
               <thead>
                 <th>Exam</th>
                 <th>Subject</th>
@@ -220,12 +236,9 @@
                 class="form-control"
               />
               <textarea class="form-control mt-3" rows="5"></textarea>
-              <input
-                type="submit"
-                value="Send Mail"
-                class="btn submit-btn mt-3"
-                aria-label="submit"
-              />
+              <button type="submit" class="btn submit-btn mt-3">
+                <i class="fa fa-paper-plane-o"></i> Send Mail
+              </button>
             </form>
           </div>
         </div>
@@ -233,8 +246,37 @@
       </section>
     </main>
     <!-- Footer starts -->
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div
+        class="container d-flex justify-content-between align-items-cente py-3"
+      >
+        <span class="lead text-white d-flex align-items-cente">
+          Created by @Hakim with ❤.
+        </span>
+        <span class="d-flex align-items-cente">
+          <a href="https://twitter.com/SadiulHakim" target="_hakim">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span
+          ></a>
+          <a href="https://www.facebook.com/Sadiul.Hakim.923/" target="_hakim">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i> </span
+          ></a>
+          <a href="">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span
+          ></a>
+          <a href="https://dev.to/sadiul_hakim" target="_hakim">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-dev fa-stack-1x fa-inverse">D</i>
+            </span></a
+          >
+        </span>
+      </div>
     </footer>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
