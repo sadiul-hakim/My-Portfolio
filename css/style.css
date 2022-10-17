@@ -15,7 +15,7 @@
   width: 100%;
 }
 .hr {
-  width: 300px;
+  width: 300px !important;
   border-width: 2px;
   border-color: var(--secondary-color);
 }
@@ -73,4 +73,12 @@
 .resume-btn {
   background: var(--primary-color) !important;
   color: white !important;
+}
+
+.skill-hr {
+  width: 300px !important;
+  height: 2px;
+  color: var(--primary-color);
+  border-width: 2px;
+  margin: 0 auto;
 }
