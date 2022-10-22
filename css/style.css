@@ -1,13 +1,27 @@
 :root {
-  --primary-color: rgba(1, 192, 103, 0.82);
+  --primary-color: rgba(0, 157, 84, 0.82);
   --secondary-color: rgb(0, 239, 72);
+  --bg-color: rgb(233, 233, 233);
 }
 
 .Home h1 {
   color: var(--primary-color);
 }
+
+.About,
+.Projects {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+}
+
+.HakimPic {
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 1px #000;
+}
+
 .Home img,
-.About img,
 .Skills img,
 .Projects img,
 .Education img,
