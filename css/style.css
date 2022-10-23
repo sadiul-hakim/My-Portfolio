@@ -87,6 +87,7 @@
 .resume-btn {
   background: var(--primary-color) !important;
   color: white !important;
+  /* resume button */
 }
 
 .skill-hr {
