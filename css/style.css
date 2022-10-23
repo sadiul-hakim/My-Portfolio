@@ -31,7 +31,7 @@
 .hr {
   width: 300px !important;
   border-width: 2px;
-  border-color: var(--secondary-color);
+  border-color: var(--primary-color);
 }
 
 .About h2,
