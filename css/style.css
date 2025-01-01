@@ -1,23 +1,34 @@
 :root {
-  --primary-color: rgba(0, 157, 84, 0.82);
-  --secondary-color: rgb(0, 239, 72);
-  --bg-color: rgb(233, 233, 233);
+    --primary-color: rgba(0, 157, 84, 0.82);
+    --secondary-color: rgb(0, 239, 72);
+    --bg-color: rgb(233, 233, 233);
+}
+
+@font-face {
+    font-family: 'Overlock'; /* Choose a name for the font */
+    src: url('/fonts/Overlock-Regular.ttf') format('woff2'); /* Include different formats for better compatibility */
+    font-weight: normal; /* Optional: specify weight */
+    font-style: normal; /* Optional: specify style */
+}
+
+body {
+    font-family: Overlock, serif !important;
 }
 
 .Home h1 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .Experience,
 .Projects {
-  background-color: var(--bg-color);
-  padding: 1.5rem;
+    background-color: var(--bg-color);
+    padding: 1.5rem;
 }
 
 .HakimPic {
-  width: 300px !important;
-  height: 300px;
-  box-shadow: 0px 0px 1px #333;
+    width: 300px !important;
+    height: 300px;
+    box-shadow: 0px 0px 1px #333;
 }
 
 .Home img,
@@ -25,12 +36,13 @@
 .Projects img,
 .Education img,
 .Contact img {
-  width: 100%;
+    width: 100%;
 }
+
 .hr {
-  width: 300px !important;
-  border-width: 2px;
-  border-color: var(--primary-color);
+    width: 300px !important;
+    border-width: 2px;
+    border-color: var(--primary-color);
 }
 
 .About h2,
@@ -39,61 +51,61 @@
 .Experience h2,
 .Education h2,
 .Contact h2 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background: white;
-  z-index: 10;
-  box-shadow: 0px 0.5px 3px #000;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    box-shadow: 0px 0.5px 3px #000;
 }
 
 .brand {
-  color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .nav-item:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .nav-item:active {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .submit-btn {
-  background: var(--primary-color) !important;
-  color: white !important;
+    background: var(--primary-color) !important;
+    color: white !important;
 }
 
 .edu-table {
-  border-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .edu-table th {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .footer {
-  background: var(--primary-color);
-  padding: 0;
+    background: var(--primary-color);
+    padding: 0;
 }
 
 .active {
-  color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .resume-btn {
-  background: var(--primary-color) !important;
-  color: white !important;
-  /* resume button */
+    background: var(--primary-color) !important;
+    color: white !important;
+    /* resume button */
 }
 
 .skill-hr {
-  width: 300px !important;
-  height: 2px;
-  color: var(--primary-color);
-  border-width: 2px;
-  margin: 0 auto;
+    width: 300px !important;
+    height: 2px;
+    color: var(--primary-color);
+    border-width: 2px;
+    margin: 0 auto;
 }
