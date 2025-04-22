@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Text Reader</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            height: 350px;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2c3034;
+        }
+
+        button {
+            padding: 0.6rem 1.2rem;
+            margin: 1rem 0.5rem 0;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:first-of-type {
+            background-color: #007bff;
+            color: white;
+        }
+
+        button:first-of-type:hover {
+            background-color: #0056b3;
+        }
+
+        button:last-of-type {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        button:last-of-type:hover {
+            background-color: #b02a37;
+        }
+
+        select {
+            margin-top: 1rem;
+            width: 100%;
+            padding: 0.6rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Text Reader</h2>
+    <textarea id="text" rows="6" cols="50" placeholder="Enter text to read..."></textarea>
+    <br/>
+    <label for="voiceSelect">Voice:</label>
+    <select id="voiceSelect"></select>
+    <br/>
+    <button onclick="speakText()">🔊 Speak</button>
+    <button onclick="stopSpeaking()">🛑 Stop</button>
+
+</div>
+
+</body>
+<script src="reader.js"></script>
+</html>

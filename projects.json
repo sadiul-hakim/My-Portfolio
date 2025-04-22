@@ -13,5 +13,10 @@
     "name": "Car Game",
     "description": "This is an online Car Game.",
     "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Car/"
+  },
+  {
+    "name": "Read Aloud",
+    "description": "This is an online Reading Application.",
+    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Read_Aloud/"
   }
 ]
