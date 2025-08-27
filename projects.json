@@ -2,26 +2,26 @@
   {
     "name": "Quran",
     "description": "This is an online Quran. This projects calls api from different server to get data.",
-    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Quran/"
+    "url": "https://sadiul-hakim.github.io/Sadi_ul_Hakim/projects/Quran/"
   },
   {
     "name": "Timer",
     "description": "This is an online Time.",
-    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Timer/"
+    "url": "https://sadiul-hakim.github.io/Sadi_ul_Hakim/projects/Timer/"
   },
   {
     "name": "Car Game",
     "description": "This is an online Car Game.",
-    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Car/"
+    "url": "https://sadiul-hakim.github.io/Sadi_ul_Hakim/projects/Car/"
   },
   {
     "name": "Read Aloud",
     "description": "This is an online Reading Application.",
-    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Read_Aloud/"
+    "url": "https://sadiul-hakim.github.io/Sadi_ul_Hakim/projects/Read_Aloud/"
   },
   {
     "name": "Color Code Generator",
     "description": "This is an online that generates random color Hex code.",
-    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Color_Picker/"
+    "url": "https://sadiul-hakim.github.io/Sadi_ul_Hakim/projects/Color_Picker/"
   }
 ]
