@@ -147,20 +147,25 @@
         </h1>
         <p id="surah_info"></p>
         <div class="action__area">
-            <label>
-                <b class="title__color">Surah</b> &nbsp;
-                <input type="number" name="surah_num" id="surah_num" value="1" placeholder="Surah Number (1-114)"/>
-            </label>
-            <label>
-                &nbsp; <b class="title__color">Ayah</b> &nbsp;
-                <input type="number" name="surah_num" id="ayah_num" value="1" placeholder="Ayah Number"/>
-            </label>
-            <select id="language" class="btn">
-                <option value="eng">English</option>
-                <option value="arb">Arabic</option>
-            </select>
-            <button class="btn" id="load__btn">Load</button>
-            <button class="btn" id="next__btn">Next</button>
+            <div class="nav__btn_area">
+                <button class="btn" id="prev__btn">Previous</button>
+                <button class="btn" id="next__btn">Next</button>
+            </div>
+            <div class="load__btn__area">
+                <label>
+                    <b class="title__color">Surah</b> &nbsp;
+                    <input type="number" name="surah_num" id="surah_num" value="1" placeholder="Surah Number (1-114)"/>
+                </label>
+                <label>
+                    &nbsp; <b class="title__color">Ayah</b> &nbsp;
+                    <input type="number" name="surah_num" id="ayah_num" value="1" placeholder="Ayah Number"/>
+                </label>
+                <select id="language" class="btn">
+                    <option value="eng">English</option>
+                    <option value="arb">Arabic</option>
+                </select>
+                <button class="btn" id="load__btn">Load</button>
+            </div>
         </div>
         <div class="result__area">
             <ul id="ayat__list"></ul>

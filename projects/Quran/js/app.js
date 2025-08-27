@@ -2,6 +2,7 @@ const surah_num = document.getElementById("surah_num");
 const ayah_num = document.getElementById("ayah_num");
 const load__btn = document.getElementById("load__btn");
 const next_num = document.getElementById("next__btn");
+const prev__btn = document.getElementById("prev__btn");
 let ayat__list = document.getElementById("ayat__list");
 const title__eng = document.getElementById("title__eng");
 const title__arb = document.getElementById("title__arb");
@@ -32,10 +33,22 @@ next_num.onclick = async () => {
     surahNumber = surah_num.value;
     ayahNumber = ayah_num.value;
 
-    if (surahNumber === 114) {
+    if (surahNumber == 114) {
         surahNumber = 0;
     }
     surah_num.value = ++surahNumber;
+    await loadAndShow(surahNumber, ayahNumber);
+}
+
+prev__btn.onclick = async () => {
+
+    surahNumber = surah_num.value;
+    ayahNumber = ayah_num.value;
+
+    if (surahNumber == 1) {
+        surahNumber = 115;
+    }
+    surah_num.value = --surahNumber;
     await loadAndShow(surahNumber, ayahNumber);
 }
 

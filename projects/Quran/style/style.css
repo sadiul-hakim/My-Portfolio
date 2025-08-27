@@ -73,7 +73,7 @@ body {
 
 .action__area {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -84,7 +84,7 @@ body {
     background: var(--primary-color);
     border-radius: 4px;
     border: none;
-    margin: 0 10px;
+    margin: 0 5px;
     font-weight: 500;
     font-size: 18px;
 }
