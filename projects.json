@@ -18,5 +18,10 @@
     "name": "Read Aloud",
     "description": "This is an online Reading Application.",
     "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Read_Aloud/"
+  },
+  {
+    "name": "Color Code Generator",
+    "description": "This is an online that generates random color Hex code.",
+    "url": "https://sadiul-hakim.github.io/My-Portfolio/projects/Color_Picker/"
   }
 ]
