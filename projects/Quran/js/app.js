@@ -5,6 +5,7 @@ const next_num = document.getElementById("next__btn");
 let ayat__list = document.getElementById("ayat__list");
 const title__eng = document.getElementById("title__eng");
 const title__arb = document.getElementById("title__arb");
+const surah_info = document.getElementById("surah_info");
 const language = document.getElementById("language");
 const surahNames = document.querySelectorAll('#surah_list > li');
 
@@ -31,7 +32,7 @@ next_num.onclick = async () => {
     surahNumber = surah_num.value;
     ayahNumber = ayah_num.value;
 
-    if (surahNumber == 114) {
+    if (surahNumber === 114) {
         surahNumber = 0;
     }
     surah_num.value = ++surahNumber;
@@ -42,25 +43,20 @@ async function loadAndShow(surahNumber, ayahNumber) {
 
     let lang = language.value;
     let data = await loadSurah(lang, surahNumber, ayahNumber);
-    title__eng.innerText = data.data.englishName;
-    title__arb.innerText = data.data.name;
-
-    showAyat(data.data, lang);
+    title__eng.innerText = data.englishName + " (" + data.englishNameTranslation + ")";
+    title__arb.innerText = data.name;
+    surah_info.innerText = data.numberOfAyahs + " Ayahs, " + "Revelation Type " + data.revelationType
+    showAyat(data, lang);
 }
 
 async function loadSurah(lang, surahNumber, ayahNumber) {
 
     let data;
     let url = getUrl(lang, surahNumber, ayahNumber);
-    if (lang === "eng") {
-        let engResponse = await fetch(url);
-        data = await engResponse.json();
-    } else {
-        let engResponse = await fetch(url);
-        data = await engResponse.json();
-    }
+    let engResponse = await fetch(url);
+    data = await engResponse.json();
 
-    return data;
+    return data.data;
 }
 
 function showAyat(data, lang) {
